@@ -6,8 +6,189 @@
     <title>Document Faisal</title>
 
     <link rel="stylesheet" href="css\styles.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
+
 <body>
-    
+
+    <nav class="navbar">
+        <img src="img/logo.png" alt="logo" class="logo">
+  
+        <div class="navbar-nav">
+          <a href="#home">Home</a>
+          <a href="#ourpackage">Our Package</a>
+          <a href="#callus">Call Us</a>
+        </div>
+      </nav>
+
+    <main>
+        <div class="judul" id="home">
+            <h1 class="home">Your Trusted Travel Agent</h1>
+            <h3>Your happiness is our happiness</h3>
+        </div>
+
+        <article class="main-article">
+
+        <!-- Konten banner auto slide -->
+         <section class="container-banner">
+            <div class="banner-autoslide image1"></div>
+            <div class="banner-autoslide image2"></div>
+            <div class="banner-autoslide image3"></div>
+            
+            <!-- <img src="img/banner1.png" alt="Banner auto slide" class="banner-image"><br><br>
+            <i>"Liburan jadi menyenangkan bersama Faisal Travel."</i>
+
+          
+
+            <div class="container-user">
+                <div>
+                    <img src="img/user.png" alt="user" class="user">
+                </div>
+                <div>
+                    <h2 class="user">Guruh</h2>
+                    <p>Karyawan, 27</p>
+                </div>
+                    
+                    
+            
+            </div> -->
+
+            <h1>Manfaat Menggunakan Jasa Agen Travel kami</h1>
+            <div class="manfaat">
+                <div>
+                    <img src="img/1.jpg" alt="nomor" class="num">
+                </div>
+                <div class="deskripsi">
+                    <p>Perencanaan Mudah: Agen travel mengurus semua detail perjalanan, mulai dari tiket hingga akomodasi, sehingga Anda bisa menikmati liburan tanpa repot.
+                    </p>
+                </div>
+            </div>
+
+            <div class="manfaat">
+                <div>
+                    <img src="img/2.png" alt="nomor" class="num">
+                </div>
+                <div class="deskripsi">
+                    <p>Harga Terjangkau: Dapatkan penawaran khusus dan diskon eksklusif yang tidak tersedia di luar agen travel.
+                    </p>
+                </div>
+            </div>
+
+            <div class="manfaat">
+                <div>
+                    <img src="img/3.png" alt="nomor" class="num">
+                </div>
+                <div class="deskripsi">
+                    <p>Dukungan Profesional: Tim ahli siap membantu Anda selama perjalanan, mengatasi masalah atau perubahan jadwal dengan cepat.
+                    </p>
+                </div>
+            </div>
+
+
+
+   
+         </section>
+
+         <!-- Form Contact Us -->
+          <section class="contact">
+            <h2>Contact Us</h2>
+            <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
+            <h4>Your Name:</h4>
+            <input type="text" placeholder="First and last name" id="username-input">
+            
+            <h4>Email Address:</h4>
+            <input type="text" placeholder="example@email.com" id="email-input">
+            
+            <h4>What are you interested in?</h4>
+            <select id="destinasi" name="destinasi">
+                <option value="select option"></option>
+                <option value="bali">Bali</option>
+                <option value="thailand">Thailand</option>
+                <option value="singapore">Singapore</option>
+                <option value="jepang">Jepang</option>
+                <option value="korea">Korea</option>
+                <option value="arab saudi">Arab Saudi</option>
+            </select>
+           
+            <button type="button" class="btn" onclick="validateForm()">SEND</button>
+
+          </section>
+
+        </article>
+
+        <!-- Konten Our Package -->
+        <article class="ourpackage" id="ourpackage">
+
+            <div class="ourpackage-header">
+                <h1>Our Package</h1>
+            </div>
+
+            <section>
+                <div class="container">
+                    <div class="satu">
+                        <span class="iconify" data-icon="material-symbols:travel" data-inline="false"></span>
+                        <span class="text">Bali</span>
+                        <p class="description">Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik</p>
+                    </div>
+                    
+                    <div class="dua">
+                        <span class="iconify" data-icon="material-symbols:travel" data-inline="false"></span>
+                        <span class="text">Thailand</span>
+                        <p class="description">Travel dan wisata di Thailand. kunjungi cagar budaya dan kuliner yang menarik</p>
+                    </div>
+
+                    <div class="tiga">
+                        <span class="iconify" data-icon="material-symbols:travel" data-inline="false"></span>
+                        <span class="text">Singapore</span>
+                        <p class="description">Travel dan wisata di Singapore. kunjungi cagar budaya dan kuliner yang menarik</p>
+                    </div>
+
+                    <div class="empat">
+                        <span class="iconify" data-icon="material-symbols:travel" data-inline="false"></span>
+                        <span class="text">Jepang</span>
+                        <p class="description">Travel dan wisata di Jepang. kunjungi cagar budaya dan kuliner yang menarik</p>
+                    </div>
+
+                    <div class="lima">
+                        <span class="iconify" data-icon="material-symbols:travel" data-inline="false"></span>
+                        <span class="text">Korea</span>
+                        <p class="description">Travel dan wisata di Korea. kunjungi cagar budaya dan kuliner yang menarik</p>
+                    </div>
+
+                    <div class="enam">
+                        <span class="iconify" data-icon="material-symbols:travel" data-inline="false"></span>
+                        <span class="text">Arab Saudi</span>
+                        <p class="description">Travel dan wisata di Arab Saudi. kunjungi cagar budaya dan kuliner yang menarik</p>
+                    </div>
+ 
+            </section>
+
+            <hr> 
+
+        </article>
+
+        <div class="closing-argument" id="callus">
+            <h1>Rencanakan Liburan Impian Anda Bersama Kami</h1>
+            <p>Dengan pengalaman bertahun-tahun di industri perjalanan, kami di Faisal Travel memahami betul bahwa setiap perjalanan adalah pengalaman yang unik. Kami hadir untuk membantu Anda merencanakan liburan tanpa stres, dengan berbagai pilihan destinasi menarik, paket wisata yang terjangkau, dan layanan yang dapat disesuaikan dengan kebutuhan Anda. Dari liburan keluarga yang santai hingga petualangan eksotis, percayakan semua kebutuhan perjalanan Anda kepada kami. Segera hubungi kami dan buat perjalanan impian Anda menjadi kenyataan. Liburan Anda dimulai di sini!</p>
+            <section class="btn-call-action">
+                <button class="btn-action">CALL TO ACTION</button>
+            </section>
+        </div>
+
+        <hr>
+
+    </main>
+
+    <footer>
+        <div class="container-logo">
+            <img src="img/logo.png" alt="logo" class="logo-akhir">
+            <p>Term of Services&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy</p>
+        
+        <span>&copy 2024 Faisal</span>
+        </div>
+       
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
