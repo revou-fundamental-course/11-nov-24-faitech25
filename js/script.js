@@ -1,6 +1,6 @@
 // Ini Javascript
 
-
+// Fungsi Validasi Formulir
 function validateForm() {
     const usernameInput = document.getElementById('username-input').value;
     console.log(usernameInput);
@@ -23,6 +23,7 @@ function validateForm() {
     }
 }
 
+// Logic banner autoslide
 let indexSlide = 1;
 const listImages = document.getElementsByClassName('banner-autoslide');
 
@@ -46,5 +47,5 @@ function hideAllSlide() {
     }
 }
 
-// Otoomatisasinya
+// Otomatisasinya
 setInterval(() => nextSlide(), 2000);

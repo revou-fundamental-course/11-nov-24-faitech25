@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Faisal</title>
+    <title>Faisal Travel</title>
 
     <link rel="stylesheet" href="css\styles.css">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
@@ -11,6 +11,7 @@
 
 <body>
 
+    <!-- Navbar start-->
     <nav class="navbar">
         <img src="img/logo.png" alt="logo" class="logo">
   
@@ -19,8 +20,10 @@
           <a href="#ourpackage">Our Package</a>
           <a href="#callus">Call Us</a>
         </div>
-      </nav>
+    </nav>
+    <!-- Navbar end -->
 
+    <!-- Home start -->
     <main>
         <div class="judul" id="home">
             <h1 class="home">Your Trusted Travel Agent</h1>
@@ -28,32 +31,37 @@
         </div>
 
         <article class="main-article">
-
-        <!-- Konten banner auto slide -->
-         <section class="container-banner">
+         <section class="konten utama">
+        
+        <!-- Konten banner auto slide start-->
             <div class="banner-autoslide image1"></div>
             <div class="banner-autoslide image2"></div>
             <div class="banner-autoslide image3"></div>
+        <!-- Konten banner auto slide end-->
             
-            <!-- <img src="img/banner1.png" alt="Banner auto slide" class="banner-image"><br><br>
-            <i>"Liburan jadi menyenangkan bersama Faisal Travel."</i>
-
-          
+        <!-- Konten testimoni start -->
+            <div class="container-user">
+                <div class="foto-user"><img src="img/user.png" alt="user"></div>
+                <div class="testimoni"><p><b>Guruh</b> <p>Prosesnya mudah, layanan ramah, dan destinasi yang dipilih sangat memuaskan. Pengalaman liburan terbaik saya!</p></p></div>
+            </div>
 
             <div class="container-user">
-                <div>
-                    <img src="img/user.png" alt="user" class="user">
-                </div>
-                <div>
-                    <h2 class="user">Guruh</h2>
-                    <p>Karyawan, 27</p>
-                </div>
-                    
-                    
-            
-            </div> -->
+                <div class="foto-user"><img src="img/user.png" alt="user"></div>
+                <div class="testimoni"><p><b>Sarah</b> <p>Liburan saya jadi lebih menyenangkan berkat Faisal Travel. Semua teratur dan nyaman dari awal hingga akhir.</p></p></div>
+            </div>
 
-            <h1>Manfaat Menggunakan Jasa Agen Travel kami</h1>
+            <div class="container-user">
+                <div class="foto-user"><img src="img/user.png" alt="user"></div>
+                <div class="testimoni"><p><b>Agung</b> <p>Pelayanan terbaik! Perjalanan saya sangat menyenankan, terorganisir dengan baik, dan tanpa hambatan. Sangat direkomendasikan!</p></p></div>
+            </div>
+
+        <!-- Konten testimoni end -->
+            
+            <!-- Konten manfaat start-->
+             <div class="judul-manfaat">
+                <h1 class="h1">Manfaat Menggunakan Jasa Agen Travel kami</h1>
+             </div>
+            
             <div class="manfaat">
                 <div>
                     <img src="img/1.jpg" alt="nomor" class="num">
@@ -83,13 +91,11 @@
                     </p>
                 </div>
             </div>
+            <!-- Konten manfaat end-->
 
-
-
-   
          </section>
 
-         <!-- Form Contact Us -->
+         <!-- Form Contact Us start-->
           <section class="contact">
             <h2>Contact Us</h2>
             <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
@@ -101,7 +107,7 @@
             
             <h4>What are you interested in?</h4>
             <select id="destinasi" name="destinasi">
-                <option value="select option"></option>
+                <option value=""></option>
                 <option value="bali">Bali</option>
                 <option value="thailand">Thailand</option>
                 <option value="singapore">Singapore</option>
@@ -113,10 +119,11 @@
             <button type="button" class="btn" onclick="validateForm()">SEND</button>
 
           </section>
+          <!-- Form Contact Us end-->
 
         </article>
 
-        <!-- Konten Our Package -->
+        <!-- Konten Our Package start -->
         <article class="ourpackage" id="ourpackage">
 
             <div class="ourpackage-header">
@@ -166,19 +173,26 @@
             <hr> 
 
         </article>
+        <!-- Konten Our Package end -->
 
+        <!-- Konten closing argument start -->
         <div class="closing-argument" id="callus">
             <h1>Rencanakan Liburan Impian Anda Bersama Kami</h1>
-            <p>Dengan pengalaman bertahun-tahun di industri perjalanan, kami di Faisal Travel memahami betul bahwa setiap perjalanan adalah pengalaman yang unik. Kami hadir untuk membantu Anda merencanakan liburan tanpa stres, dengan berbagai pilihan destinasi menarik, paket wisata yang terjangkau, dan layanan yang dapat disesuaikan dengan kebutuhan Anda. Dari liburan keluarga yang santai hingga petualangan eksotis, percayakan semua kebutuhan perjalanan Anda kepada kami. Segera hubungi kami dan buat perjalanan impian Anda menjadi kenyataan. Liburan Anda dimulai di sini!</p>
+            <p>Dengan pengalaman bertahun-tahun di industri perjalanan, kami Faisal Travel memahami betul bahwa setiap perjalanan adalah pengalaman yang unik. Kami hadir untuk membantu Anda merencanakan liburan tanpa stres, dengan berbagai pilihan destinasi menarik, paket wisata yang terjangkau, dan layanan yang dapat disesuaikan dengan kebutuhan Anda. Dari liburan keluarga yang santai hingga petualangan eksotis, percayakan semua kebutuhan perjalanan Anda kepada kami. Segera hubungi kami dan buat perjalanan impian Anda menjadi kenyataan. Liburan Anda dimulai di sini!</p>
+            
             <section class="btn-call-action">
-                <button class="btn-action">CALL TO ACTION</button>
+            <button class="btn-action">CALL TO ACTION</button>
             </section>
-        </div>
 
+        </div>
+        <!-- Konten closing argument end -->
+
+        <!-- membuat garis -->
         <hr>
 
     </main>
 
+    <!-- Bagian Footer start-->
     <footer>
         <div class="container-logo">
             <img src="img/logo.png" alt="logo" class="logo-akhir">
@@ -188,7 +202,9 @@
         </div>
        
     </footer>
+    <!-- Bagian Footer end-->
 
+    <!-- Pendeklarasian Javascript -->
     <script src="js/script.js"></script>
 </body>
 </html>

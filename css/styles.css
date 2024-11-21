@@ -1,11 +1,12 @@
 /* Ini CSS */
+
+/* Style navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 1.4rem 7%; */
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 3rem;
+    padding-right: 2.5rem;
     background-color: white;
     border-bottom: 1px solid #513c28;
     position: fixed;
@@ -13,34 +14,27 @@
     left: 0;
     right: 0;
     z-index: 9999;
-  }
+}
 
-  .navbar .logo {
+/* Style logo */
+.navbar .logo {
     padding-top: 10px;
     padding-bottom: 10px;
     width: 80px;
     height: auto;
-  }
+}
 
-  .navbar .navbar-nav a {
+/* Style link navigasi di navbar */
+.navbar .navbar-nav a {
     color: black;
     display: inline-block;
     font-size: 1.3rem;
-    /* margin: 0 1rem; */
     text-decoration: none;
-
     border: 1px solid;
     padding: 1rem;
-   
-  }
-
-header {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 4rem;
-    margin-right: 4rem;
 }
 
+/* Style padding top pada setiap halaman */
 #home, #ourpackage, #callus {
     padding-top: 80px;
 }
@@ -51,6 +45,7 @@ header {
     justify-content: space-evenly;
 }
 
+/* Style pada judul halaman home */
 .judul h1, h3 {
     display: flex;
     justify-content: center;
@@ -64,6 +59,7 @@ header {
     font-weight: 100;
 }
 
+/* Style banner autoslide */
 .banner-autoslide {
     height: 250px;
     background-position: center;
@@ -82,22 +78,6 @@ header {
     background-image: url('https://picsum.photos/700');
 }
 
-
-
-.banner-image {
-
-    width: 700px;
-    height: 400px;
-    object-fit: cover;
-}
-
-.banner i {
-    color: grey;
-    font-size: 20px;
-    margin-left: 2rem;
-    width: 100px;
-}
-
 .icon {
     display: flex;
     width: 100%;
@@ -110,27 +90,50 @@ header {
     justify-content: center;
 }
 
+.judul-manfaat .h1 {
+    text-align: center;
+    text-align: center;
+}
 
-
-.container-user, .manfaat {
+.manfaat {
     width: 600px;
-    height: 150px;
-    /* border: 5px solid #333; */
+    height: 100px;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.manfaat div {
+    width: 100px;
+    height: 50px;
+    margin: 2px;
+    text-align: center;
+}
+
+.container-user {
+    width: 600px;
+    height: 120px;
+    border: 2px solid black;
     margin: 30px auto;
     padding: 5px;
     box-sizing: border-box;
     display: flex;
-   
- 
 }
 
-.container-user div, .manfaat div {
+.container-user div {
     width: 100px;
-    height: 50px;
-    /* background-color: rgb(4, 191, 238); */
+    height: 100px;
     margin: 2px;
-    text-align: center;
-  
+}
+
+.container-user div img {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.testimoni {
+    flex: 1;
 }
 
 .user, .num {
@@ -138,33 +141,26 @@ header {
     height: auto;
     border-radius: 250px;
     margin-top: 0.5rem;
-  
 }
-
 
 .deskripsi {
     flex: 2;
     margin-top: 10px;
 }
 
-
-
-
 .contact {
-    width: 350px;
+    width: 400px;
     height: 550px;
     background-color: #eae6e6;
-
     padding: 2rem;
 }
 
 .contact p {
     color: grey;
-    margin-bottom: 4rem;
+   
 }
 
-
-
+/* Style Form Input */
 input[type="text"], select {
     width: 300px; /* Lebar input */
     padding: 10px; /* Jarak antara teks dan border */
@@ -175,6 +171,7 @@ input[type="text"], select {
     background-color: #f4f4f4; /* Warna latar belakang */
 }
 
+/* Style tombol submit */
 .btn {
     width: 320px;
     height: 40px;
@@ -204,6 +201,8 @@ input[type="text"], select {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+
 
 .container div {
     width: 400px;
@@ -283,14 +282,101 @@ input[type="text"], select {
     height: auto;
 }
 
-/* Responsive */
+
+
+/* Responsive pada tablet */
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 80%;
+    }
+
+    .main-article {
+        /* width: 100%; */
+        /* border: 5px solid #333; */
+        margin: 30px auto;
+        padding: 5px;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .judul-manfaat .h1 {
+        text-align: center;
+        font-size: 80%;
+        text-align: center;
+    }
+
+    .manfaat {
+        font-size: 80%;
+        padding-left: 110px;
+        padding-right: 130px;
+    }
+
+    .closing-argument {
+        font-size: 80%;
+    }
+
+    .closing-argument p {
+        margin-top: 3rem;
+        text-align: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .container-user {
+        width: 50%;
+        height: 170px;
+    }
+}
+/* Responsive pada mobile*/
 @media only screen and (max-width: 480px) {
+    html {
+        font-size: 100%;
+      }
+
     .navbar {
         flex-direction: column;
         align-items: center;
     }
 
+    .navbar .navbar-nav a {
+        font-size: 0.8rem;
+    }
+
     .logo {
         margin-bottom: 16px;
     }
+
+    /* Style padding top pada setiap halaman */
+    #home, #ourpackage, #callus {
+    padding-top: 120px;
+    }
+
+    .banner-autoslide {
+        width: 70%;
+        left: 2rem;
+    }
+
+   
+
+    .main-article {
+        width: 100%;
+        /* border: 5px solid #333; */
+        margin: 30px auto;
+        padding: 5px;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .manfaat {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+  
+    
 }
